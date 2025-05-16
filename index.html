@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Meu portfólio</title>
 </head>
 
 <body>
-    <header>
-        <img src="img/avatar-perfil.png" alt="avatar da Fernanda" srcset="">
-        <p>Olá, meu nome é Carolina</p>
+    <header class="container text-center">
+        <img src="img/Professora.jpeg" alt="imagem professora carol" class="rounded-circle" width="120" height="150"
+            srcset="">
+        <p class="lead">Olá, meu nome é Carolina</p>
         <h1>Eu sou Professora</h1>
         <p>Sou professora do Ensino médio e fundamental do Colégio Estadual Humerto de Alencar Castelo Branco localizado emm Guairaçá -PR, atuo como docente de Física I, Física II, Física III, Matemática e Matemática II. Formada pela UNESPAR em Matemática, pela UNOPAR em pedagogia, Pós graduada em Educação Especial e no momento cursando Física pela UNIFATECIE.</p>
         <p>Minhas habilidades</p>
@@ -23,6 +25,125 @@
             <p class="badge bg-secondary">Pedagogia</p>
         </div>
     </header>
+    <main class="container mt-5">
+        <h2>Projetos orientados pela professora</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Turma Thales.jpeg" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Fisiologia vegetal em condidções controladas tecnológicas de baixa custo</h5>
+                        <p class="card-text">Com a interação entre o campo e tecnologia cada vez mais presente no
+                            nosso dia a dia, algumas mudanças nas técnicas de plantio, colheita e até
+                            mesmo de cultivo de plantas precisaram ser adaptadas...
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Turma Gustavo.jpeg" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Esteira distribuidora de grãos
+                            Artificial</h5>
+                        <p class="card-text">A agricultura é uma das principais atividades econômicas do Brasil, desempenhando um papel crucial no fornecimento de alimentos, na geração de empregos e na contribuição para a balança comercial do país...</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Turma Iza.jpeg" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Estufa Semi Automática
+                        </h5>
+                        <p class="card-text">A agricultura é uma atividade essencial para a economia brasileira, mas enfrenta desafios relacionados à eficiência e sustentabilidade. O manuseio manual de grãos é uma etapa crítica, sujeita a perdas e desperdícios...
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Fisiologia vegetal em condições 
+                        controladas tecnológicas de 
+                        baixo custo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Para o esse projeto foi tomado como objetivos principais o armazenamento de dados, o gerenciamento desses dados, maximizar a produção e a simulação de um laboratório. Onde as condições de umidade do solo, luminosidade e de crescimento seriam analisadas e controladas, já outras variáveis como, umidade do ar e temperatura do ar seriam apenas analisadas para termos maior controle sobre a produção, podendo fazer assim com que a planta chegue em seu potencial máximo. Vale a pena ressaltar que a interface que nos mostraria esses dados seria via um dashboard criado especificamente para o projeto. </p>
+                    <img src="img/projeto.jpeg" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto criado pelos alunos do 3°B no ano de 2024.">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Esteira distribuidora de grãos Artificial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A agricultura é uma das principais atividades econômicas do Brasil, desempenhando um papel crucial no fornecimento de alimentos, na geração de empregos e na contribuição para a balança comercial do país. No entanto, o setor enfrenta inúmeros desafios relacionados à eficiência, sustentabilidade e competitividade. Entre esses desafios, o manuseio de grãos é uma etapa crítica que impacta diretamente a produtividade e a qualidade dos produtos agrícolas.
+A tradicional movimentação manual de grãos é um processo que demanda muito tempo e esforço físico, além de estar suscetível a erros humanos, desperdícios e contaminações. Com a crescente demanda por alimentos e a necessidade de otimizar processos para atender a um mercado cada vez mais exigente, torna-se imperativo adotar soluções tecnológicas que possam automatizar e aprimorar essas operações.
+Neste contexto, o projeto da esteira organizadora de grãos surge como uma resposta inovadora para a modernização da gestão de grãos na propriedade agrícola. A esteira visa reduzir o esforço físico dos trabalhadores, minimizar perdas e aumentar a eficiência no transporte e organização dos grãos. A introdução de tecnologias automatizadas no campo não só melhora a produtividade, mas também contribui para a sustentabilidade do negócio agrícola, ao diminuir o desperdício e melhorar a qualidade do produto final.
+A relevância deste projeto está alinhada com as tendências globais de modernização da agricultura, onde a automação e a robótica desempenham papéis fundamentais na criação de sistemas agrícolas mais resilientes e eficientes. Ao implementar a esteira organizadora de grãos, a propriedade agrícola não apenas se beneficia de ganhos imediatos de produtividade, mas também se posiciona na vanguarda da inovação tecnológica no setor agrícola.
+                    </p>
+                    <img src="img/projeto gustavo.jpeg" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto criado pelos alunos do 2°B no ano de 2024.">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Estufa Semi Automática</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>	A agricultura e jardinagem modernas exigem métodos eficientes e sustentáveis para garantir a saúde das plantas e a otimização do uso de recursos hídricos.</p>
+                    <p> A irrigação manual pode ser trabalhosa e não garante a uniformidade necessária, além de levar ao desperdício de água, e a noite as plantas a noite não recebem a luminosidade necessária. A implementação de um Led e um sistema de irrigação automática que utiliza sensores de umidade do solo e um controlador como o Arduino Uno, pode melhorar significativamente a eficiência do uso de água, garantindo que as plantas recebam a quantidade de luminosidade certa e a quantidade ideal de irrigação.</p>
+                     <img src="img/projeto iza.jpeg" alt="Projeto 3" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/ProfCarolAssis">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2025. Produzido pela professora Carolina Assis</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
